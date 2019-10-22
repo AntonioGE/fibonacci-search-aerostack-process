@@ -6,19 +6,21 @@ The algorithm has been based on the work of the following paper: [Real-Time Mode
      
 ## Installation 
 
-1. Move the files of this repository to the directory `~/workspace/ros/aerostack_catkin_ws/src/`, so that the file tree looks like it follows:
+1. Move the files of this repository to the directory `~/workspace/ros/aerostack_catkin_ws/src/` so that the file tree looks like it follows:
 
 ```~/workspace/ros/aerostack_catkin_ws/src/
-     -behavior_follow_UAV
- 	    -CMakeLists.txt
-         -package.xml
-         -launch
-             -behavior_follow_uav.launch
- 		-src
-             -include
-                 -behavior_follow_uav.h
-             -source
-                 -behavior_follow_uav.cpp
-                 -behavior_follow_uav_main.cpp
+     FSA_process/ 
+          CMakeLists.txt 
+          package.xml 
+          config.xml 
+          src/ 
+               include/ 
+                    FSA_process.h 
+               source/ 
+                    FSA_process.cpp
+                    FSA_process_main.cpp 
+          launch/ 
+               FSA_process.launch
 ```
+
  
