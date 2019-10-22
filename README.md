@@ -1,4 +1,4 @@
-# FibonacciSearchAerostackProcess
+# Fibonacci Search Aerostack Process
 This package creates a process used in [Aerostack](https://github.com/Vision4UAV/Aerostack), a software framework for aerial robotic systems developed by [Vision4UAV](https://github.com/Vision4UAV) from Polytechnic University of Madrid. This process can be used for autonomously tunning the position and altitude PID mid-level controllers used in Aerostack. The package uses the Fibonacci search tunning method for tunning two gains of the PID simultaneously.
 
 
