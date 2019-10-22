@@ -10,18 +10,18 @@ The algorithm has been based on the work of the following paper: [Real-Time Mode
 
      ```
      ~/workspace/ros/aerostack_catkin_ws/src/
-     FSA_process/ 
-          CMakeLists.txt 
-          package.xml 
-          config.xml 
-          src/ 
-               include/ 
-                    FSA_process.h 
-               source/ 
-                    FSA_process.cpp
-                    FSA_process_main.cpp 
-          launch/ 
-               FSA_process.launch
+          FSA_process/ 
+               CMakeLists.txt 
+               package.xml 
+               config.xml 
+               src/ 
+                    include/ 
+                         FSA_process.h 
+                    source/ 
+                         FSA_process.cpp
+                         FSA_process_main.cpp 
+               launch/ 
+                    FSA_process.launch
      ```
 
  
