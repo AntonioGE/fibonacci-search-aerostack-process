@@ -8,7 +8,8 @@ The algorithm has been based on the work of the following paper: [Real-Time Mode
 
 1. Move the files of this repository to the directory `~/workspace/ros/aerostack_catkin_ws/src/` so that the file tree looks like it follows:
 
-```~/workspace/ros/aerostack_catkin_ws/src/
+     ```
+     ~/workspace/ros/aerostack_catkin_ws/src/
      FSA_process/ 
           CMakeLists.txt 
           package.xml 
@@ -21,6 +22,6 @@ The algorithm has been based on the work of the following paper: [Real-Time Mode
                     FSA_process_main.cpp 
           launch/ 
                FSA_process.launch
-```
+     ```
 
  
