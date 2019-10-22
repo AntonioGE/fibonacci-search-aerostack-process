@@ -23,5 +23,19 @@ The algorithm has been based on the work of the following paper: [Real-Time Mode
                launch/ 
                     FSA_process.launch
      ```
+2. Compile Aerostack using the following command:
+     ```~/workspace/ros/aerostack_catkin_ws/$ catkin_make```
 
+## Usage
+
+The process can be launched for simulation and real flights. 
+
+### Simulation
+1. Activation of ROS using the command `roscore`
+2. Activation of the launchers for Gazebo using the commands in the Aerostack folder `launchers`:
+     ```
+     ./rotors_simulation_agents.sh
+     ./rotor_simulation_drivers.sh
+     ```
+3. Activation of the Extended Kalman Filter using 
  
