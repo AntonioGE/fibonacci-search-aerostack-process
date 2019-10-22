@@ -1,10 +1,23 @@
 /*******************************************************************************/
 /* 
 	Nombre: FSA_process
-	Descripcion: Este proceso de Aerostack permite activar el algorimo de b鷖queda
-	de Fibonacci para obtener el valor 髉timo de 2 de las ganancias de los
-	controladores PID de altura y posici髇.
-	Autor: Antonio Manuel Garc韆 Estraviz
+	Descripcion: Este proceso de Aerostack permite activar el algorimo de b煤squeda
+	de Fibonacci para obtener el valor 贸ptimo de 2 de las ganancias de los
+	controladores PID de altura y posici贸n.
+	Autor: Antonio Manuel Garc铆a Estraviz
+	
+	This program is free software: you can redistribute it and/or modify
+ 	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program. If not, see http://www.gnu.org/licenses/.
 */
 /*******************************************************************************/
 
@@ -25,10 +38,10 @@ FSA_process::~FSA_process()
 /*******************************************************************************/
 /*
 	Nombre: void FSA_process::removeSpacesTabsLinebreaks(std::string& text)
-	Descripcion: Elimina los saltos de l韓ea, espacios y tabulaciones de una 
+	Descripcion: Elimina los saltos de l铆nea, espacios y tabulaciones de una 
 	cadena de texto en formato std::string
 	Valor devuelto: void
-	Autor: Antonio Manuel Garc韆 Estraviz
+	Autor: Antonio Manuel Garc铆a Estraviz
 */
 /*******************************************************************************/
 void FSA_process::removeSpacesTabsLinebreaks(std::string& text)
@@ -103,7 +116,7 @@ template<typename T> T FSA_process::readXMLParameter(XMLFileReader &xmlFileReade
 	Nombre: bool FSA_process::readConfigs(const std::string& configFile)
 	Descripcion: Lee la configuracion a utilizar durante el proceso de ajuste 
 	desde un archivo XML
-	Muestra en pantalla si el proceso de lectura ha sido efectuado con 閤ito.
+	Muestra en pantalla si el proceso de lectura ha sido efectuado con 茅xito.
 	En caso contrario, se utilizaran los valores por defecto
 */
 /*******************************************************************************/
@@ -201,7 +214,7 @@ bool FSA_process::readConfigs(const std::string& configFile)
 /*******************************************************************************/
 /*
 	Nombre: void FSA_process::reconfigureAltitudeGains(float gain1, float gain2)
-	Descripcion: Env韆 las ganancias al MidLevelController para que sean
+	Descripcion: Env铆a las ganancias al MidLevelController para que sean
 	sustituidas por las especificadas en el controlador de altura
 */
 /*******************************************************************************/
@@ -228,7 +241,7 @@ void FSA_process::reconfigureAltitudeGains(float gain1, float gain2)
 /*******************************************************************************/
 /*
 	Nombre: void FSA_process::reconfigurePositionGains(float gain1, float gain2)
-	Descripcion: Env韆 las ganancias al MidLevelController para que sean
+	Descripcion: Env铆a las ganancias al MidLevelController para que sean
 	sustituidas por las especificadas en el controlador de posicion
 */
 /*******************************************************************************/
@@ -256,7 +269,7 @@ void FSA_process::reconfigurePositionGains(float gain1, float gain2)
 /*******************************************************************************/
 /*
 	Nombre: void FSA_process::sendReference(float reference[3])
-	Descripcion: Env韆 la posici髇 y 醤gulo de yaw de referencia
+	Descripcion: Env铆a la posici贸n y 谩ngulo de yaw de referencia
 */
 /*******************************************************************************/
 void FSA_process::sendReference(float reference[3])
@@ -301,7 +314,7 @@ double FSA_process::positionCostFunction()
 /*******************************************************************************/
 /*
 	Nombre: void FSA_process::createFile(const std::string &path, const std::string &filename)
-	Descripcion: Crea un archivo de guardado para almacenar informaci髇 acerca
+	Descripcion: Crea un archivo de guardado para almacenar informaci贸n acerca
 	del proceso de ajuste
 */
 /*******************************************************************************/
@@ -317,7 +330,7 @@ void FSA_process::createFile(const std::string &path, const std::string &filenam
 /*******************************************************************************/
 /*
 	Nombre: void FSA_process::saveDataToFile(const std::string &path, const std::string &filename, std::string &data)
-	Descripcion: Guarda la informaci髇 especificada en formato std::string en 
+	Descripcion: Guarda la informaci贸n especificada en formato std::string en 
 	la ruta especificada
 */
 /*******************************************************************************/
@@ -337,7 +350,7 @@ void FSA_process::saveDataToFile(const std::string &path, const std::string &fil
 /*******************************************************************************/
 /*
 	Nombre: double FSA_process::FibonacciNumber(int n)
-	Descripcion: Calcula el n n鷐ero de fibonacci 
+	Descripcion: Calcula el n n煤mero de fibonacci 
 */
 /*******************************************************************************/
 double FSA_process::FibonacciNumber(int n)
@@ -370,7 +383,7 @@ double FSA_process::FibonacciNumber(int n)
 /*
 	Nombre: void FSA_process::generateFibonacciRange(double i, double N_max, const double current_range[2], double new_range[2])
 	Descripcion: Genera un rango de Fibonacci a partir del rango anterior
-	y el n鷐ero de iteracion
+	y el n煤mero de iteracion
 */
 /*******************************************************************************/
 void FSA_process::generateFibonacciRange(double i, double N_max, const double current_range[2], double new_range[2])
@@ -432,7 +445,7 @@ void FSA_process::initFibonacciVariables()
 /*******************************************************************************/
 /*
 	Nombre: void FSA_process::ownSetUp()
-	Descripcion: Lee los archivos de configuraci髇
+	Descripcion: Lee los archivos de configuraci贸n
 */
 /*******************************************************************************/
 void FSA_process::ownSetUp()
@@ -444,7 +457,7 @@ void FSA_process::ownSetUp()
 /*******************************************************************************/
 /*
 	Nombre: void FSA_process::ownStart()
-	Descripcion: Comienza el m閠odo de ajuste. Esta funci髇 es ejecutada
+	Descripcion: Comienza el m茅todo de ajuste. Esta funci贸n es ejecutada
 	cuando el proceso es iniciado
 */
 /*******************************************************************************/
@@ -493,7 +506,7 @@ void FSA_process::ownStop()
 /*******************************************************************************/
 /*
 	Nombre: void FSA_process::ownRun()
-	Descripcion: Ejecuci髇 del sistema de ajuste de Fibonacci. Es ejecutado 
+	Descripcion: Ejecuci贸n del sistema de ajuste de Fibonacci. Es ejecutado 
 	de forma continua a una frecuencia especificada en el archivo main del 
 	proceso.
 */
@@ -712,7 +725,7 @@ void FSA_process::ownRun()
 /*******************************************************************************/
 /*
 	Nombre: void FSA_process::estimatedPoseCallBack(const droneMsgsROS::dronePose& message)
-	Descripcion: Callback que almacena la posici髇 del UAV 
+	Descripcion: Callback que almacena la posici贸n del UAV 
 */
 /*******************************************************************************/
 void FSA_process::estimatedPoseCallBack(const droneMsgsROS::dronePose& message)
@@ -747,7 +760,7 @@ void FSA_process::estimatedSpeedsCallBack(const droneMsgsROS::droneSpeeds& messa
 /*******************************************************************************/
 /*
 	Nombre: void FSA_process::estimatedPoseCallBack(const droneMsgsROS::dronePose& message)
-	Descripcion: Callback que almacena la posici髇 del UAV 
+	Descripcion: Callback que almacena la posici贸n del UAV 
 */
 /*******************************************************************************/
 void FSA_process::estimatedPoseCallBack(const droneMsgsROS::dronePose& message)
