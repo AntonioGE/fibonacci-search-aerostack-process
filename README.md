@@ -6,7 +6,7 @@ The algorithm has been based on the work of the following paper: [Real-Time Mode
      
 ## Installation 
 
-
+1. Move the files of this repository to the directory `~/workspace/ros/aerostack_catkin_ws/src/`, so that the file tree looks like it follows:
 
 ```~/workspace/ros/aerostack_catkin_ws/src/
      -behavior_follow_UAV
