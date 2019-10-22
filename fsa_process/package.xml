@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package>
+  <name>fsa_process</name>
+  <version>0.0.0</version>
+  <description>The fsa_process package</description>
+
+  <maintainer email="antonio.garcia.estraviz@gmail.com">antonio</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>drone_process</build_depend>
+  <build_depend>droneMsgsROS</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>yaml-cpp</build_depend>
+  <build_depend>robot_process</build_depend>
+  <build_depend>lib_cvgloggerROS</build_depend>
+  <build_depend>roslib</build_depend>
+
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>drone_process</run_depend>
+  <run_depend>droneMsgsROS</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>yaml-cpp</run_depend>
+  <run_depend>robot_process</run_depend>
+  <run_depend>lib_cvgloggerROS</run_depend>
+  <run_depend>roslib</run_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

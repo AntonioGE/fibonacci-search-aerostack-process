@@ -1,0 +1,69 @@
+<!-- Launches: behavior_land -->
+<launch>
+
+  <!-- Basic data -->
+  <arg name="drone_id_namespace"                    default="drone1" />
+  <arg name="drone_id"                              default="1" />
+  <arg name="my_stack_directory"                    default="$(env AEROSTACK_STACK)" />
+
+  <arg name="config" 	default="config.xml" />
+
+  <!-- Custom topics & services-->
+  <arg name="estimated_pose_topic"               default="estimated_pose" />
+  <arg name="controllers_topic"                     default="command/high_level" />
+  <arg name="rotation_angles_topic"                 default="rotation_angles" />
+  <arg name="initialize_yaw_srv"                    default="droneOdometryStateEstimator/setInitDroneYaw"/>
+  <arg name="consult_belief"                         default="consult_belief"/>
+  <arg name="estimated_speed_topic"                 default="estimated_speed"/>
+  <arg name="yaw_controller_str"                    default="droneControllerYawRefCommand" />
+  <arg name="service_topic_str"                     default="droneTrajectoryController/setControlMode" />
+  <arg name="drone_position_str"                    default="dronePositionRefs" />
+  <arg name="speed_topic"                           default="droneSpeedsRefs" />
+  <arg name="drone_control_mode"                    default="droneTrajectoryController/controlMode" />
+  <arg name="d_altitude"                            default="command/dAltitude" />
+  <arg name="gain_reconfigure"                            default="gain_reconfigure" />
+
+<param name="config" value="$(arg config)" type="string"/>
+  <param name="estimated_pose_topic"                  value="$(arg estimated_pose_topic)" type="str" />
+    <param name="controllers_topic"                     value="$(arg controllers_topic)" type="str" />
+    <param name="rotation_angles_topic"                 value="$(arg rotation_angles_topic)" type="str" />
+    <param name="estimated_speed_topic"                 value="$(arg estimated_speed_topic) " type="str"/>
+    <param name="yaw_controller_str"                    value="$(arg yaw_controller_str) " type="str"/>
+    <param name="service_topic_str"                     value="$(arg service_topic_str) " type="str"/>
+    <param name="drone_position_str"                    value="$(arg drone_position_str) " type="str"/>
+    <param name="speed_topic"                           value="$(arg speed_topic) " type="str"/>
+    <param name="drone_control_mode"                    value="$(arg drone_control_mode) " type="str"/>
+    <param name="d_altitude"                            value="$(arg d_altitude) " type="str"/>
+    <param name="consult_belief"                         value="$(arg consult_belief) " type="str"/>
+    <param name="gain_reconfigure"                         value="$(arg gain_reconfigure) " type="str"/>
+
+  <group ns="$(arg drone_id_namespace)">
+
+    <!-- Basic data -->
+    <param name="~drone_id_namespace"                    value="$(arg drone_id_namespace)" type="str" />
+    <param name="~drone_id"                              value="$(arg drone_id)" type="str" />
+    <param name="~my_stack_directory"                    value="$(arg my_stack_directory)" type="str" />
+
+    <!-- Custom topics & services -->
+    <param name="~estimated_pose_topic"                  value="$(arg estimated_pose_topic)" type="str" />
+    <param name="~controllers_topic"                     value="$(arg controllers_topic)" type="str" />
+    <param name="~rotation_angles_topic"                 value="$(arg rotation_angles_topic)" type="str" />
+    <param name="~estimated_speed_topic"                 value="$(arg estimated_speed_topic) " type="str"/>
+    <param name="~yaw_controller_str"                    value="$(arg yaw_controller_str) " type="str"/>
+    <param name="~service_topic_str"                     value="$(arg service_topic_str) " type="str"/>
+    <param name="~drone_position_str"                    value="$(arg drone_position_str) " type="str"/>
+    <param name="~speed_topic"                           value="$(arg speed_topic) " type="str"/>
+    <param name="~drone_control_mode"                    value="$(arg drone_control_mode) " type="str"/>
+    <param name="~d_altitude"                            value="$(arg d_altitude) " type="str"/>
+    <param name="~consult_belief"                         value="$(arg consult_belief) " type="str"/>
+    <param name="~initialize_yaw_srv"                    value="$(arg initialize_yaw_srv) " type="str"/>
+    <param name="~consult_belief"                         value="$(arg consult_belief) " type="str"/>
+    <param name="~gain_reconfigure"                         value="$(arg gain_reconfigure) " type="str"/>
+
+    <node name="my_process" pkg="my_process" type="my_process" output="screen"/>
+
+    <!--<test test-name="LandTest" pkg="behavior_land" type="LandTest"/>-->
+
+  </group>
+
+</launch>
