@@ -6,6 +6,8 @@ The algorithm has been based on the work of the following paper: [Real-Time Mode
      
 ## Installation 
 
+
+
 ```~/workspace/ros/aerostack_catkin_ws/src/
      -behavior_follow_UAV
  	    -CMakeLists.txt
@@ -19,4 +21,3 @@ The algorithm has been based on the work of the following paper: [Real-Time Mode
                  -behavior_follow_uav.cpp
                  -behavior_follow_uav_main.cpp
 ```
-Hola
