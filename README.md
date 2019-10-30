@@ -4,10 +4,11 @@ This package creates a process used in [Aerostack](https://github.com/Vision4UAV
 
 The algorithm has been based on the work of the following paper: [Real-Time Model-Free Minimum-SeekingAutotuning Method for Unmanned Aerial VehicleControllers Based on Fibonacci-Search Algorithm](https://www.researchgate.net/publication/330369094_Real-Time_Model-Free_Minimum-Seeking_Autotuning_Method_for_Unmanned_Aerial_Vehicle_Controllers_Based_on_Fibonacci-Search_Algorithm), that has been developed by the Institute of Control, Robotics and Information Engineering of the Poznan University of Technology and the Department of Cybernetics, Faculty of Electrical Engineering of the Czech Technical University in Prague.
 
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YUOkMmKgKLg
-" target="_blank"><img src="http://img.youtube.com/vi/YUOkMmKgKLg/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<p align="center">
+     <a href="http://www.youtube.com/watch?feature=player_embedded&v=YUOkMmKgKLg
+     " target="_blank"><img src="http://img.youtube.com/vi/YUOkMmKgKLg/0.jpg" 
+     alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+</p>
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YUOkMmKgKLg/0.jpg)](https://www.youtube.com/watch?v=YUOkMmKgKLg)
 
