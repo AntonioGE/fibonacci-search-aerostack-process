@@ -4,10 +4,10 @@ This package creates a process used in [Aerostack](https://github.com/Vision4UAV
 
 The algorithm has been based on the work of the following paper: [Real-Time Model-Free Minimum-SeekingAutotuning Method for Unmanned Aerial VehicleControllers Based on Fibonacci-Search Algorithm](https://www.researchgate.net/publication/330369094_Real-Time_Model-Free_Minimum-Seeking_Autotuning_Method_for_Unmanned_Aerial_Vehicle_Controllers_Based_on_Fibonacci-Search_Algorithm), that has been developed by the Institute of Control, Robotics and Information Engineering of the Poznan University of Technology and the Department of Cybernetics, Faculty of Electrical Engineering of the Czech Technical University in Prague.
 
-<p align="center">
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YUOkMmKgKLg/0.jpg)](https://www.youtube.com/watch?v=YUOkMmKgKLg)
-</p>
-     
+
+
 ## Installation 
 
 1. Move the files of this repository to the directory `~/workspace/ros/aerostack_catkin_ws/src/` so that the file tree looks like it follows:
