@@ -44,5 +44,5 @@ The process can be launched for simulation and real flights.
      ```
      $ FSA_process FSA_process.launch --wait drone_id_namespace:=drone7 drone_id_int:=7 my_stack_directory:={AEROSTACK_STACK}
      ```
-7. Landing of the drone.
+7. Wait for the tunning for complete (~10 min) and land the drone.
 
