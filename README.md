@@ -37,5 +37,12 @@ The process can be launched for simulation and real flights.
      ./rotors_simulation_agents.sh
      ./rotor_simulation_drivers.sh
      ```
-3. Activation of the Extended Kalman Filter using 
- 
+3. Initialization of the Extended Kalman Filter using the `L` key in the monitoring terminal.
+4. Take off the drone by using `T` key, activate the Extended Kalman Filter using the `O` key.
+5. Activate the position control with `8`key.
+6. Activation of the Process by using the following command in a new terminal:
+     ```
+     $ FSA_process FSA_process.launch --wait drone_id_namespace:=drone7 drone_id_int:=7 my_stack_directory:={AEROSTACK_STACK}
+     ```
+7. Landing of the drone.
+
